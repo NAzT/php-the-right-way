@@ -16,9 +16,7 @@ Lithium, และอื่นๆดังนั้นถ้าเราเห�
 * [Read about PSR-1][psr1]
 * [Read about PSR-2][psr2]
 
-You can use the [phpcs-psr][phpcs-psr] sniff for [PHP_CodeSniffer][phpcs] to check code against these recommendations.
-Use Fabien Potencier's [PHP Coding Standards Fixer][phpcsfixer] to automatically modify your code syntax so that it
-conforms with these standards, saving you from fixing each problem by hand.เราสามารถใช้ [phpcs-psr][phpcs-psr] เพื่อตรวจสอบ  [PHP_CodeSniffer][phpcs] ว่าเราได้ทำตามข้อตกลงหรือไม่ และนอกจากนี้เรายัง
+เราสามารถใช้ [phpcs-psr][phpcs-psr] สำหรับ  [PHP_CodeSniffer][phpcs] เพื่อตรวจสอบว่าเราได้ทำตามข้อตกลงหรือไม่ และนอกจากนี้เรายัง
 สามารถใช้ Fabien Potencier's [PHP Coding Standards Fixer][phpcsfixer] ที่จะช่วยเราแก้ไขรูปแบบการเขียนโค้ดให้เป็นไปตามข้อตกลงที่เราเลือกได้แบบอัตโนมัติ
 
 [fig]: http://www.php-fig.org/
