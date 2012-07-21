@@ -3,9 +3,9 @@ title: Built-in Web Server
 isChild: true
 ---
 
-## Built-in web server
+## เว็บเซิร์ฟเวอร์พร้อมใช้(Built-in web server)
 
-You can start learning PHP without the hassle of installing and configuring a full-fledged web server (PHP 5.4 required). To start the server, run the following from your terminal in your project's web root:
+ท่านสามารถเริ่มศึกษา PHP ได้โดยไม่ต้องติดตั้งเว็บเซิร์ฟเวอร์แบบเต็มรูปแบบ (เฉพาะ PHP 5.4) โดยการสั่งให้เว็บเซิร์ฟเวอร์ทำงานนั้นให้เราสั่งคำสั่งด้านล่างที่ web root ของโปรเจคที่เราทำงานอยู่
 
     > php -S localhost:8000
 
