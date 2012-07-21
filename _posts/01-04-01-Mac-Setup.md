@@ -2,19 +2,19 @@
 isChild: true
 ---
 
-## Mac Setup
+## การติดตั้งบนเครื่อง Mac
 
-OSX comes prepackaged with PHP but it is normally a little behind the latest stable. Lion comes with PHP 5.3.6 and
-Mountain Lion has 5.3.10.
+โดยปกติ OSX จะเตรียมแพกเกจ PHP มาให้พร้อมอยู่แล้วอย่างไรก็ตามเวอร์ชั่นที่เราได้มากับ OSX นั้นจะเป็นเวอร์ชั่นที่เก่าไปนิดเช่น
+เราจะได้ PHP5.3.6 มาพร้อมกับ Lion และ PHP 5.3.10 มากับ Mountain Lion  
 
-To update PHP on OSX you can get it installed through a number of Mac [package managers][mac-package-managers], with
-[php-osx by Liip][php-osx-downloads] being recommended.
+ดังนั้นเราต้อง update ไปสู่เวอร์ชั่นที่ใหม่กว่านี้และการ update PHP บน OSX เองก็
+สามารถทำได้หลายวิธีเช่น [package managers][mac-package-managers],กับ [php-osx by Liip][php-osx-downloads]
 
-The other option is to [compile it yourself][mac-compile], in that case be sure to have installed either Xcode or
-Apple's substitute ["Command Line Tools for Xcode"][apple-developer] downloadable from Apple's Mac Developer Center.
+อีกหนึ่งทางเลือกคือการ [คอมไพล์เอง][mac-compile], แต่นั่นหมายความว่าเราต้องติดตั้ง Xcode หรือ
+Apple's substitute ["Command Line Tools for Xcode"][apple-developer] ซึ่งเราสามารถดาว์นโหลดได้ที่ Mac Developer Center.
 
-For a complete "all-in-one" package including PHP, Apache web server and MySQL database, all this with a nice control
-GUI, try [MAMP][mamp-downloads].
+อีกหนึ่งทางเลือกคือการใช้แพกเกจสำเร็จรูป "all-in-one" ที่มาพร้อมทั้ง PHP, Apache web server และ MySQL พร้อมกันนั้นเรา
+จะได้เครื่องมือในการบริหารจัดการที่เป็น GUI มาด้วยตัวอย่างแพกเกจนั้นคือ [MAMP][mamp-downloads]
 
 [mac-package-managers]: http://www.php.net/manual/en/install.macosx.packages.php
 [mac-compile]: http://www.php.net/manual/en/install.macosx.compile.php
