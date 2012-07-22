@@ -2,33 +2,33 @@
 isChild: true
 ---
 
-## Programming Paradigms
+## กรอบของการโปรแกรมมิ่ง
 
-PHP is a flexible, dynamic language that supports a variety of programming techniques. It has evolved dramatically over
-the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in PHP 5.3 
-(2009), and traits in PHP 5.4 (2012). 
+เป็นภาษาที่มีความยืดหยุ่นสูง เป็นภาษาแบบไดนามิกส์ รองรับเทคนิคการเขียนโปรแกรมหลายรูปแบบ
+ตั้งแต่การเขียนโปรแกรมเชิงวัตถุ(object oriented programming) ที่ถูกเพิ่มเข้ามาเมื่อปี 2004 การใช้ฟังก์ชั่นแบบ anonymous และ namespaces ที่ถูก
+เพิ่มเข้ามาในเวอร์ชั่น 5.3 เมื่อปี  2009 และล่าสุดคือการเพิ่มสิ่งที่เรียกว่า trait เข้ามาในเวอร์ชั่น 5.4 ในปี 2012
 
-### Object-oriented Programming
+### การเขียนโปรแกรมเชิงวัตถุ(object-oriented programming)
 
-PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
-interfaces, inheritence, constructors, cloning, exceptions, and more.
+PHP เป็นภาษาที่มีความพร้อมเรื่องการเขียนโปรแกรมเชิงวัตถุสูงมาก
+ภาษาหนึ่งเลยก็ว่าได้ความสามารถหลักเช่น class, abstract class, interface class, inheritance, constructor, cloning, exception และอื่นๆได้
+ถูกสร้างไว้ให้เราใช้งานอย่างเพียบพร้อม
 
 * [Read about Object-oriented PHP][oop]
 * [Read about Traits][traits]
 
-### Functional Programming
+### การเขียนโปรแกรมเชิงฟังก์ชั่น(functional programming)
 
-PHP supports first-class function, meaning that a function can be assigned to a variable. Both user defined and built-in 
-functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to other
-functions (feature called Higher-order functions) and function can return other functions.
+PHP รองรับแนวคิดเรื่อง first-class function ซึ่งเป็นแนวที่ทำให้เราสามารถกำหนดฟังก์ชั่นเข้ากับตัวแปรได้โดยฟังก์ชั่นเหล่านั้นเป็นได้ นอกจากนี้ทั้ง user-defined และ built-in
+ฟังก์ชั่นยังสามารถถูกอ้างโดยตัวแปรและถูกเรียกแบบ dynamic ได้ด้วย ยิ่งไปกว่านั้นฟังก์ชั่นยังสามารถถูกส่งเข้าไปเป็นพารามิเตอร์ของฟังก์ชั่นอื่น (ความสามารถนี้เรียกว่า high-order functions) 
+และฟังก์ชั่นยังสามารถถูก return กลับออกมาจากฟังก์ชั่นได้อีกด้วย
 
-Recursion, a feature that allows a function to call itself is supported by the language, but most of the PHP code focus
-on iteration.
+การทำ recursion ที่ยอมให้ฟังก์ชั่นเรียกตัวเองได้นั้นก็สามารถใช้ได้แต่ส่วนใหญ่แล้วโค้ดของ PHP จะโฟกัสไปที่ iteration
 
-New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
+การใช้ anonymous ฟังก์ชั่น (รองรับเรื่องการทำ closures) ถูกใส่เข้ามาตั้งแต่ PHP5.3
 
-PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
-can be used interchangeably with anonymous functions in almost all cases.
+PHP5.4 เพิ่มความสามารถเรื่องการ bind closure เข้ากับ object scope ได้และยังปรับปรุงความสามารถเรื่อง
+การทำ callable นั่นคือเราสามารถใช้มันสำหรับการแลกเปลี่ยนกับ anonymous ฟังก์ชั่นได้เกือบทุกกรณี
 
 * Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
 * [Read about Anonymous Functions][anonymous-functions]
@@ -37,12 +37,11 @@ can be used interchangeably with anonymous functions in almost all cases.
 * [Read about Callables][callables]
 * [Read about dynamically invoking functions with `call_user_func_array`][call-user-func-array]
 
-### Meta Programming
+### การเขียนโปรแกรมเชิงนิยาม(meta programming)
 
-PHP supports various forms of meta programming through mechanisms like the Reflection API and Magic Methods. There are
-many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow
-developers to hook into class behavior. Ruby developers often say that PHP is lacking `method_missing`, but it is
-available as `__call()` and `__callStatic()`.
+PHP เองรองรับการทำงานของ meta programming หลายรูปแบบโดยสิ่งที่อยู่เบื้องหลังการทำงานคือสิ่งที่เรียกว่า Reflection API และ Magic Method 
+เราจะพบ Magic Method ที่เราสามารถใช้งานได้เลยโดยไม่ต้งอเขียนเช่น `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()` 
+โปรแกรมเมอร์ภาษา Ruby พูดเสมอว่า PHP ไม่มีสิ่งที่เรียกว่า  `method_missing` แต่ตอนนี้เรามีแล้วและอยู่ในรูปแบบของ `__call()` และ `__callStatic()`
 
 * [Read about Magic Methods][magic-methods]
 * [Read about Reflection][reflection]
