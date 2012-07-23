@@ -1,6 +1,6 @@
 ---
 title: "ความปลอดภัย"
-layout: default
-permalink: "#Security"
+anchorid: "security"
 ---
-# ความปลอดภัย
+
+<h1 id="security">ความปลอดภัย</h1>

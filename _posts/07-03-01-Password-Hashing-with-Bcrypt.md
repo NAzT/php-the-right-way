@@ -1,8 +1,10 @@
 ---
 isChild: true
+title: "การแฮชรหัสผ่านด้วย Bcrypt"
+anchorid: "password_hashing_with_bcrypt"
 ---
 
-## การแฮชรหัสผ่านด้วย Bcrypt
+<h2 id="password_hashing_with_bcrypt">การแฮชรหัสผ่านด้วย Bcrypt</h2>
 
 เกือบทุกคนที่สร้างเว็บแอพพลิเคชันด้วย PHP นั้นมีการผูกอยู่กับระบบล็อกอิน ชื่อผู้ใช้(username) และรหัสผ่านที่แฮชแล้ว(hashed password) ถูกเก็บไว้ในฐานข้อมูลและเอามาใช้อีกทีตอนยืนยันตัวบุคคลผู้ใช้ตอนล็อกอิน
 
