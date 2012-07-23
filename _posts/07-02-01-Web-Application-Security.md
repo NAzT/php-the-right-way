@@ -2,12 +2,12 @@
 isChild: true
 ---
 
-## Web Application Security
+## ความปลอดภัยของเว็บแอพพลิเคชัน
 
-There are bad people ready and willing to exploit your web application. It is important that you
- take necessary precautions to harden your web application's security. Luckily, the fine folks at [The Open Web Application Security Project][1] (OWASP) have compiled a comprehensive list of known security issues and methods to protect yourself against them. This is a must read for the security-conscious developer.
+มีบุคคลไม่ประสงค์ดีคอยจ้องจะเจาะหาช่องโหว่ของเว็บคุณเสมอ มันเป็นสิ่งจำเป็นมากที่คุณ
+ จะต้องเตรียมพร้อมและระมัดระวังให้เว็บแอพพลิเคชันของคุณทนทานต่อการบุกเจาะระบบ โชคดีที่มีกลุ่มคนน่ารักที่ [The Open Web Application Security Project][1] (OWASP) ได้รวบรวมรายการของประเด็นทางความปลอดภัยที่ช่วยปกป้องคุณได้ไว้แล้ว นี่เป็นสิ่งที่นักพัฒนาที่ตระหนักในเรื่องนี้จะต้องอ่านไว้
 
-* [Read the OWASP Security Guide][2]
+* [อ่านคู่มือความปลอดภัยของ OWASP][2]
 
 [1]: https://www.owasp.org/
 [2]: https://www.owasp.org/index.php/Guide_Table_of_Contents

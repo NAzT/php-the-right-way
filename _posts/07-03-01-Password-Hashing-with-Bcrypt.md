@@ -2,18 +2,18 @@
 isChild: true
 ---
 
-## Password Hashing with Bcrypt
+## การแฮชรหัสผ่านด้วย Bcrypt
 
-Eventually everyone builds a PHP application that relies on user login. Usernames and (hashed) passwords are stored in a database and later used to authenticate users upon login.
+เกือบทุกคนที่สร้างเว็บแอพพลิเคชันด้วย PHP นั้นมีการผูกอยู่กับระบบล็อกอิน ชื่อผู้ใช้(username) และรหัสผ่านที่แฮชแล้ว(hashed password) ถูกเก็บไว้ในฐานข้อมูลและเอามาใช้อีกทีตอนยืนยันตัวบุคคลผู้ใช้ตอนล็อกอิน
 
-It is important that you properly _hash_ passwords that are stored in a database. If passwords are not hashed, and your database is hacked or accessed by an unauthorized third-party, all user accounts are now compromised.
+มันเป็นสิ่งสำคัญมากที่คุณจะต้อง _แฮช_ รหัสผ่านของคุณอย่างเหมาะสมเมื่อเก็บลงในฐานข้อมูล ถ้ารหัสผ่านไม่ได้ถูกแฮชไว้ แล้ววันหนึ่งฐานข้อมูลก็โดนเจาะหรือมีคนอื่นที่ไม่ได้รับอนุญาตเข้ามาดู เมื่อนั้นข้อมูลผู้ใช้ของคุณก็จะซวยตกกระไดพลอยโจนไปด้วย
 
-**Hash passwords with Bcrypt**. It's super simple, and (for all intents and purposes) Bcrypt makes it impossible for someone to reverse-engineer the plain-text version of a password should the database be compromised.
+**จงแฮชรหัสผ่านด้วย Bcrypt** มันเรียบง่ายโคตรๆ และทั้งหมดทั้งมวล Bcrypt เป็นการทำให้เป็นเรื่องที่เป็นไปไม่ได้เลยที่ใครบางคนจะทำวิศรกรรมย้อนกลับเพื่อหารหัสผ่านที่แท้จริงก่อนถูกแฮช
 
-There are several Bcrypt libraries for PHP that you may use.
+มีไลบรารี่ Bcrypt ของ PHP อยู่มากมายที่คุณจะเอามาใช้ได้
 
-* [Read "How to Safely Store a Password" by Coda Hale][3]
-* [Use Bcrypt with PHPass][4]
+* [อ่าน "วิธีเก็บรหัสผ่านให้ปลอดภัย" โดย Coda Hale][3]
+* [การใช้ Bcrypt ด้วย PHPass][4]
 
 [3]: http://codahale.com/how-to-safely-store-a-password/
 [4]: http://www.openwall.com/phpass/

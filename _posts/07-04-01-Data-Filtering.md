@@ -2,16 +2,11 @@
 isChild: true
 ---
 
-## Data Filtering
+## การกรองข้อมูล
 
-Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate
-foreign input before using it in code. The `filter_var` and `filter_input` functions can sanitize text and validate text formats (e.g.
-email addresses).
+อย่าเลยนะที่จะไว้ใจข้อมูลแปลกปลอมที่รับเข้ามา (เช่น ข้อมูลที่มาจาก form, ผู้แปล) จะให้ดีต้องตรวจพวกมันก่อนเอามาใช้ ฟังก์ชัน `filter_var` และ `filter_input` จะช่วยขัดเชื้อโรคร้ายในข้อมูลแปลกปลอมได้ (ยกตัวอย่างเช่น ที่อยู่อีเมล)
 
-Foreign input can be anything: `$_GET` and `$_POST` form input data, some values in the `$_SERVER`
-superglobal, and the HTTP request body via `fopen('php://input', 'r')`. Remember, foreign input is not
-limited to form data submitted by the user. Uploaded and downloaded files, session values, cookie data,
-and data from third-party web services are foreign input, too.
+ข้อมูลแปลกปลอมสามารถเป็นอะไรก็ได้: ข้อมูลที่รับมาจากฟอร์ม `$_GET` และ `$_POST` หรือค่าที่อยู่ในตัวแปร superglobal `$_SERVER` และอาจเป็นการเรียก `fopen('php://input', 'r')` เพื่อเอาค่า HTTP body ก็ได้ จำไว้ว่าข้อมูลแปลกปลอมไม่ได้จำกัดอยู่เฉพาะข้อมูลจากฟอร์มที่ผู้ใช้ส่งเข้ามา แต่ยังรวมถึงไฟล์ที่อัพโหลดหรือดาวน์โหลดลงมา ค่าเซสชั่น คุกกี้ และค่าที่มาจากเว็บเซอร์วิสอื่นๆ ก็ถือเป็นขอ้มูลแปลกปลอมหรือข้อมูลต่างด้าวเช่นกัน
 
 While foreign data can be stored, combined, and accessed later, it is still foreign input. Every
 time you process, output, concatenate, or include data in your code, ask yourself if
