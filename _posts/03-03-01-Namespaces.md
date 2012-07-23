@@ -2,15 +2,15 @@
 isChild: true
 ---
 
-## Namespaces
+## เนมสเปซ(Namespaces)
 
-As mentioned above, the PHP community has a lot of developers creating lots of code. This means that one library's PHP code may use the same class name as another library. When both libraries are used in the same namespace, they collide and cause trouble.
+เนื่องจากการที่จำนวนผู้ใช้ภาษา PHP มีจำนวนเยอะมากผลของมันคือการสร้างโค้ดและไลบรารี่ขึ้นมาเป็นจำนวนมากและก็มีความเป็นไปได้สูงมากที่จะมีการใช้ชื่อคลาสที่ซ้ำกันและเมื่อเกิดการใช้เนมสเปซซ้ำกันซึ่งก็จะนำมาซึ่งปัญหา
 
-_Namespaces_ solve this problem. As described in the PHP reference manual, namespaces may be compared to operating system directories that _namespace_ files; two files with the same name may co-exist in separate directories. Likewise, two PHP classes with the same name may co-exist in separate PHP namespaces. It's as simple as that.
+_Namespaces_ สามารถแก้ปัญหานี้ได้ โดยถ้าเราอ่านคู่มือของ PHP เราจะพบว่าการใช้งาน namespace จะเหมือนกับเรื่องของไดเรคทอรี่ของ operating system นั่นคือไฟล์สองไฟล์ที่มีชื่อเหมือนกันสามารถอยู่ได้ในโฟลเดอร์ที่ต่างกัน เช่นเดียวกันกับ PHP คลาสที่มีชื่อเหมือนกันสามารถอยู่ใน namespace ที่แตกต่างกันได้ เรื่องมันก็ง่ายๆแบบนี้
 
-It is important for you to namespace your code so that it may be used by other developers without fear of colliding with other libraries.
+ดังนั้นเราควรจะกำหนด namespace ให้โค้ดเราทุกครั้งเพื่อเป็นการช่วยเหลือให้นักพัฒนาท่านอื่นๆสามารถนำโค้ดของเราไปใช้ได้อย่างปลอดภัยไร้กังวลว่าชื่อคลาสของเราจะไปชนกับของเขาจนเละเทะ
 
-One recommended way to use namespaces is outlined in [PSR-0][psr0], which aims to provide a standard file, class and namespace convention to allow plug-and-play code.
+เราสามารถศึกษามาตรฐานการใช้งาน namespace ได้จาก [PSR-0][psr0], ซึ่งเราจะได้เห็นและเรียนรู้มาตรฐานการตั้งชื่อไฟล์ คลาส และ namespace เพื่อให้เราสามารถสร้างโค้ดที่พร้อมจะถูกนำไปใช้งานแบบ plug-n-play ได้
 
 * [Read about Namespaces][namespaces]
 * [Read about PSR-0][psr0]
